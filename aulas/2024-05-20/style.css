@@ -1,0 +1,47 @@
+h1 {
+    color: gray
+}
+/*adicionar hover que tem funcao de ao passar o mouse aplicar o estilo*/
+h1:hover {
+    color:black
+}
+
+
+ul li:nth-child(even) {
+    color:blue
+}
+
+ul li:hover {
+    color:aqua
+}
+
+/*adicionar estilo ao id ceara*/
+#ceara:hover {
+    color:blue;
+    background-color:black;
+}
+
+/*adicionar estilo a classe timece */
+.timece:hover {
+    color:white;
+    background-color:yellowgreen;
+}
+
+button:focus {
+    background-color:blue;
+}
+
+button:hover {
+    background-color:red;
+}
+
+.impar {
+    color:red;
+}
+
+/*adicionar estilo alternado nas linhas da tr */
+tr:nth-child(even) {
+    color:red;
+    background-color:blue;
+
+}
