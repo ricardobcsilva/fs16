@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Cadastre uma Musica</h2>
+
+    <input id="nome" type="text" placeholder="Nome">
+    <input id="album" type="text" placeholder="Album">
+    <input id="bandacantor" type="text" placeholder="Banda ou Cantor">
+
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <h2>Musicas</h2>
+
+<!-- <p id="pessoa"></p>-->
+
+    <section id="secao-tabela">
+        <table id="tabela">
+            <tr>
+                <th>Nome</th>
+                <th>Album</th>
+                <th>Banda/Cantor</th>
+            </tr>
+        </table>
+    </section>
+
+    <script>
+
+
+        function cadastrar() {
+
+            const nomeInput = document.getElementById("nome");
+            const albumInput = document.getElementById("album");
+            const bandaCantorInput = document.getElementById("bandacantor");
+
+            const musica = {
+                nome: nomeInput.value,
+                album: albumInput.value,
+                banda: bandaCantorInput.value
+            }
+
+            //const pessoaParagrafo = document.getElementById("musica")
+
+            //pessoaParagrafo.innerHTML = "Nome: " + pessoa.nome + "<br>"
+            //pessoaParagrafo.innerHTML += "Sobrenome: " + pessoa.sobrenome + "<br>"
+            //pessoaParagrafo.innerHTML += "Idade: " + pessoa.idade + "<br>"
+
+            const tabela = document.getElementById("tabela")
+
+            const cNome = "<td>" + musica.nome + "</td>";
+            const cAlbum = "<td>" + musica.album + "</td>";
+            const cBandacantor = "<td>" + musica.bandacantor + "</td>";
+
+            tabela.innerHTML += "<tr>" + cNome + cAlbum + cBandacantor + "</tr>"
+
+        }
+    </script>
+</body>
+
+</html>

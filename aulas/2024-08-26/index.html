@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <input id="nome" type="text" placeholder="nome">
+    <input id="sobrenome" type="text" placeholder="sobrenome">
+    <input id="idade" type="number" placeholder="idade">
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <h2>pessoa</h2>
+    <p id="pessoa"></p>
+
+        <script>
+            function cadastrar() {
+                const nomeInput = document.getElementById("nome");
+                const sobrenomeInput = document.getElementById("sobrenome");
+                const idadeInput = document.getElementById("idade");
+            
+            const pessoa = {
+                nome: nomeInput.value,
+                sobrenome: sobrenomeInput.value,
+                idade: idade.value
+            }
+        
+            const pessoaParag = document.getElementById("pessoa")
+            pessoaParag.innerHTML = "Nome: " + pessoa.nome + "<br>",
+            pessoaParag.innerHTML += "Sobrenome " + pessoa.sobrenome + "<br>",
+            pessoaParag.innerHTML += "Idade " + pessoa.idade + "<br>"
+
+        }
+    
+        </script>
+</body>
+</html>
